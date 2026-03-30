@@ -1,0 +1,62 @@
+﻿/* Member 3: activity log and performance metrics */
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activity-list li {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+
+.empty-item {
+    text-align: center;
+    color: var(--light-text);
+}
+
+.activity-title {
+    margin: 0 0 6px 0;
+    font-weight: bold;
+}
+
+.activity-details {
+    margin: 0;
+    color: var(--light-text);
+    font-size: 14px;
+}
+
+.stats-container {
+    display: flex;
+    gap: 10px;
+}
+
+.stat-box {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.stat-box h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--light-text);
+}
+
+.stat-value {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .stats-container {
+        flex-direction: column;
+    }
+}
